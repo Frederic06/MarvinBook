@@ -9,21 +9,63 @@
 /* Begin PBXBuildFile section */
 		2BD2A779249DDA0500F00BC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A778249DDA0500F00BC1 /* AppDelegate.swift */; };
 		2BD2A77B249DDA0500F00BC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A77A249DDA0500F00BC1 /* SceneDelegate.swift */; };
-		2BD2A77D249DDA0500F00BC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A77C249DDA0500F00BC1 /* ViewController.swift */; };
+		2BD2A77D249DDA0500F00BC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A77C249DDA0500F00BC1 /* LoginViewController.swift */; };
 		2BD2A780249DDA0500F00BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2A77E249DDA0500F00BC1 /* Main.storyboard */; };
 		2BD2A782249DDA0A00F00BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2A781249DDA0A00F00BC1 /* Assets.xcassets */; };
 		2BD2A785249DDA0A00F00BC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD2A783249DDA0A00F00BC1 /* LaunchScreen.storyboard */; };
+		2BD2A790249DE9E100F00BC1 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A78F249DE9E100F00BC1 /* TitleLabel.swift */; };
+		2BD2A793249DEB6D00F00BC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A792249DEB6D00F00BC1 /* Constants.swift */; };
+		2BD2A795249DEB7800F00BC1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A794249DEB7800F00BC1 /* Extensions.swift */; };
+		2BD2A797249DF27200F00BC1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A796249DF27200F00BC1 /* AppCoordinator.swift */; };
+		2BD2A79D249DF81E00F00BC1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A79C249DF81E00F00BC1 /* LoginViewModel.swift */; };
+		2BD2A79F249DF85600F00BC1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A79E249DF85600F00BC1 /* Alert.swift */; };
+		2BD2A7A2249DF8EB00F00BC1 /* MarvinBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7A1249DF8EB00F00BC1 /* MarvinBookModel.swift */; };
+		2BD2A7A4249DF93300F00BC1 /* MarvinBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7A3249DF93300F00BC1 /* MarvinBookRepository.swift */; };
+		2BD2A7A6249DF99000F00BC1 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7A5249DF99000F00BC1 /* HttpClient.swift */; };
+		2BD2A7AB249DFCE900F00BC1 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7AA249DFCE900F00BC1 /* Route.swift */; };
+		2BD2A7AD249DFEB500F00BC1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7AC249DFEB500F00BC1 /* HomeViewController.swift */; };
+		2BD2A7AF249DFEC000F00BC1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7AE249DFEC000F00BC1 /* HomeViewModel.swift */; };
+		2BD2A7B1249E355600F00BC1 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7B0249E355600F00BC1 /* Screens.swift */; };
+		2BD2A7B3249E374E00F00BC1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7B2249E374E00F00BC1 /* DetailViewController.swift */; };
+		2BD2A7B5249E375500F00BC1 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7B4249E375500F00BC1 /* DetailViewModel.swift */; };
+		2BD2A7B7249E376100F00BC1 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7B6249E376100F00BC1 /* BookmarkViewController.swift */; };
+		2BD2A7B9249E376900F00BC1 /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7B8249E376900F00BC1 /* BookmarkViewModel.swift */; };
+		2BD2A7BB249E43D600F00BC1 /* CurvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7BA249E43D600F00BC1 /* CurvedView.swift */; };
+		2BD2A7BD249EAA1200F00BC1 /* BookCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7BC249EAA1100F00BC1 /* BookCollectionDataSource.swift */; };
+		2BD2A7BF249EAA2300F00BC1 /* BookTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7BE249EAA2300F00BC1 /* BookTableDataSource.swift */; };
+		2BD2A7C1249EACD200F00BC1 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD2A7C0249EACD200F00BC1 /* CustomCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BD2A775249DDA0500F00BC1 /* MarvinBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvinBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD2A778249DDA0500F00BC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD2A77A249DDA0500F00BC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BD2A77C249DDA0500F00BC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BD2A77C249DDA0500F00BC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2BD2A77F249DDA0500F00BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BD2A781249DDA0A00F00BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD2A784249DDA0A00F00BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BD2A786249DDA0A00F00BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD2A78F249DE9E100F00BC1 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		2BD2A792249DEB6D00F00BC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2BD2A794249DEB7800F00BC1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2BD2A796249DF27200F00BC1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2BD2A79C249DF81E00F00BC1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2BD2A79E249DF85600F00BC1 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2BD2A7A1249DF8EB00F00BC1 /* MarvinBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvinBookModel.swift; sourceTree = "<group>"; };
+		2BD2A7A3249DF93300F00BC1 /* MarvinBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvinBookRepository.swift; sourceTree = "<group>"; };
+		2BD2A7A5249DF99000F00BC1 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		2BD2A7AA249DFCE900F00BC1 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		2BD2A7AC249DFEB500F00BC1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2BD2A7AE249DFEC000F00BC1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2BD2A7B0249E355600F00BC1 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		2BD2A7B2249E374E00F00BC1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2BD2A7B4249E375500F00BC1 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		2BD2A7B6249E376100F00BC1 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		2BD2A7B8249E376900F00BC1 /* BookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
+		2BD2A7BA249E43D600F00BC1 /* CurvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedView.swift; sourceTree = "<group>"; };
+		2BD2A7BC249EAA1100F00BC1 /* BookCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionDataSource.swift; sourceTree = "<group>"; };
+		2BD2A7BE249EAA2300F00BC1 /* BookTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableDataSource.swift; sourceTree = "<group>"; };
+		2BD2A7C0249EACD200F00BC1 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +98,116 @@
 		2BD2A777249DDA0500F00BC1 /* MarvinBook */ = {
 			isa = PBXGroup;
 			children = (
+				2BD2A78D249DDD3100F00BC1 /* Ressources */,
+				2BD2A78C249DDD2C00F00BC1 /* Sources */,
+			);
+			path = MarvinBook;
+			sourceTree = "<group>";
+		};
+		2BD2A78C249DDD2C00F00BC1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
 				2BD2A778249DDA0500F00BC1 /* AppDelegate.swift */,
 				2BD2A77A249DDA0500F00BC1 /* SceneDelegate.swift */,
-				2BD2A77C249DDA0500F00BC1 /* ViewController.swift */,
+				2BD2A796249DF27200F00BC1 /* AppCoordinator.swift */,
+				2BD2A7B0249E355600F00BC1 /* Screens.swift */,
+				2BD2A7A9249DFCDC00F00BC1 /* Network */,
 				2BD2A77E249DDA0500F00BC1 /* Main.storyboard */,
+				2BD2A798249DF74200F00BC1 /* Login */,
+				2BD2A799249DF76F00F00BC1 /* Home */,
+				2BD2A79A249DF77500F00BC1 /* Detail */,
+				2BD2A79B249DF77B00F00BC1 /* Bookmark */,
+				2BD2A7A0249DF88C00F00BC1 /* Model */,
+				2BD2A791249DEB6100F00BC1 /* Helpers */,
+				2BD2A78E249DE9C500F00BC1 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2BD2A78D249DDD3100F00BC1 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
 				2BD2A781249DDA0A00F00BC1 /* Assets.xcassets */,
 				2BD2A783249DDA0A00F00BC1 /* LaunchScreen.storyboard */,
 				2BD2A786249DDA0A00F00BC1 /* Info.plist */,
 			);
-			path = MarvinBook;
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		2BD2A78E249DE9C500F00BC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2A78F249DE9E100F00BC1 /* TitleLabel.swift */,
+				2BD2A7BA249E43D600F00BC1 /* CurvedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2BD2A791249DEB6100F00BC1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2A792249DEB6D00F00BC1 /* Constants.swift */,
+				2BD2A794249DEB7800F00BC1 /* Extensions.swift */,
+				2BD2A79E249DF85600F00BC1 /* Alert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2BD2A798249DF74200F00BC1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2A77C249DDA0500F00BC1 /* LoginViewController.swift */,
+				2BD2A79C249DF81E00F00BC1 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2BD2A799249DF76F00F00BC1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2A7AC249DFEB500F00BC1 /* HomeViewController.swift */,
+				2BD2A7AE249DFEC000F00BC1 /* HomeViewModel.swift */,
+				2BD2A7BC249EAA1100F00BC1 /* BookCollectionDataSource.swift */,
+				2BD2A7C0249EACD200F00BC1 /* CustomCollectionCell.swift */,
+				2BD2A7BE249EAA2300F00BC1 /* BookTableDataSource.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2BD2A79A249DF77500F00BC1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2A7B2249E374E00F00BC1 /* DetailViewController.swift */,
+				2BD2A7B4249E375500F00BC1 /* DetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2BD2A79B249DF77B00F00BC1 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2A7B6249E376100F00BC1 /* BookmarkViewController.swift */,
+				2BD2A7B8249E376900F00BC1 /* BookmarkViewModel.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		2BD2A7A0249DF88C00F00BC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2A7A1249DF8EB00F00BC1 /* MarvinBookModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BD2A7A9249DFCDC00F00BC1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2A7A3249DF93300F00BC1 /* MarvinBookRepository.swift */,
+				2BD2A7AA249DFCE900F00BC1 /* Route.swift */,
+				2BD2A7A5249DF99000F00BC1 /* HttpClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +281,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD2A77D249DDA0500F00BC1 /* ViewController.swift in Sources */,
+				2BD2A7BF249EAA2300F00BC1 /* BookTableDataSource.swift in Sources */,
+				2BD2A79F249DF85600F00BC1 /* Alert.swift in Sources */,
+				2BD2A793249DEB6D00F00BC1 /* Constants.swift in Sources */,
+				2BD2A795249DEB7800F00BC1 /* Extensions.swift in Sources */,
+				2BD2A7B9249E376900F00BC1 /* BookmarkViewModel.swift in Sources */,
+				2BD2A7AF249DFEC000F00BC1 /* HomeViewModel.swift in Sources */,
+				2BD2A7B7249E376100F00BC1 /* BookmarkViewController.swift in Sources */,
+				2BD2A77D249DDA0500F00BC1 /* LoginViewController.swift in Sources */,
+				2BD2A7BD249EAA1200F00BC1 /* BookCollectionDataSource.swift in Sources */,
+				2BD2A790249DE9E100F00BC1 /* TitleLabel.swift in Sources */,
+				2BD2A7B1249E355600F00BC1 /* Screens.swift in Sources */,
+				2BD2A7B5249E375500F00BC1 /* DetailViewModel.swift in Sources */,
+				2BD2A7AD249DFEB500F00BC1 /* HomeViewController.swift in Sources */,
+				2BD2A79D249DF81E00F00BC1 /* LoginViewModel.swift in Sources */,
+				2BD2A7B3249E374E00F00BC1 /* DetailViewController.swift in Sources */,
 				2BD2A779249DDA0500F00BC1 /* AppDelegate.swift in Sources */,
 				2BD2A77B249DDA0500F00BC1 /* SceneDelegate.swift in Sources */,
+				2BD2A7A2249DF8EB00F00BC1 /* MarvinBookModel.swift in Sources */,
+				2BD2A797249DF27200F00BC1 /* AppCoordinator.swift in Sources */,
+				2BD2A7A6249DF99000F00BC1 /* HttpClient.swift in Sources */,
+				2BD2A7C1249EACD200F00BC1 /* CustomCollectionCell.swift in Sources */,
+				2BD2A7AB249DFCE900F00BC1 /* Route.swift in Sources */,
+				2BD2A7A4249DF93300F00BC1 /* MarvinBookRepository.swift in Sources */,
+				2BD2A7BB249E43D600F00BC1 /* CurvedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6377X6A483;
-				INFOPLIST_FILE = MarvinBook/Info.plist;
+				INFOPLIST_FILE = MarvinBook/Ressources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6377X6A483;
-				INFOPLIST_FILE = MarvinBook/Info.plist;
+				INFOPLIST_FILE = MarvinBook/Ressources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
