@@ -3,22 +3,16 @@ Voici la justifications des choix techniques pour l'application demo "MARVIN BOO
 
 ---Architecture globale---
 
-Les fonctionnalités demandées comprennent beaucoup de logiques, le MVVM permet une meilleure distinction des responsabilité et les tests sur la logique sont plus simple à réaliser. 
+=> Les fonctionnalités demandées comprennent beaucoup de logiques, le MVVM permet une meilleure distinction des responsabilité et les tests sur la logique sont plus simple à réaliser. 
 
-L'application a été réalisée en MVVM-C avec le pattern delegate.
+=> L'application a été réalisée en MVVM-C avec le pattern delegate.
 
-=> L'AppCoordinator est responsable de la transition des vues et des données et est le delegate de chacun des ViewModel.
-
-=> Le ViewController responsable de l'affichage des vues.
-
-=> Le ViewModel est responsable de la logique et de la commande de l'actualisation des vues.
-
-=> Une classe "DataSource" est delegate et dataSource de chaque list (UITableView ou UICollectionView)
-
-=> Le repository récupère les données (requetes réseaux ou persistance). Un "RepositoryType" est créé en amont afin de permettre de tester sans appel réseau.
-
-=> Le repository recupère les URLs auprès de la classe "Route"
-
+- L'AppCoordinator est responsable de la transition des vues et des données et est le delegate de chacun des ViewModel.
+- Le ViewController responsable de l'affichage des vues.
+- Le ViewModel est responsable de la logique et de la commande de l'actualisation des vues.
+- Une classe "DataSource" est delegate et dataSource de chaque list (UITableView ou UICollectionView)
+- Le repository récupère les données (requetes réseaux ou persistance). Un "RepositoryType" est créé en amont afin de permettre de tester sans appel réseau.
+- Le repository recupère les URLs auprès de la classe "Route"
 
 Présentation des pages et de l'arborescence
 
