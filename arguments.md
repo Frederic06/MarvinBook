@@ -21,6 +21,7 @@ L'application a été réalisée en MVVM-C avec le pattern delegate.
 
 
 Présentation des pages et de l'arborescence
+
 ---LOGIN---
 
 Le login est fake, j'ai utilisé un booléen renseigné dans NSUSERDEFAULT afin de stocker le statut login ou logout de manière persistante.
