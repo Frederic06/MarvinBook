@@ -22,26 +22,22 @@ extension Screens {
         return viewController
     }
     
-    func createHomeViewController(delegate: HomeViewModelDelegate) -> UIViewController {
+    func createHomeViewController(delegate: HomeViewModelDelegate, repoDelegate: RepositoryDelegate) -> UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         let route = Route()
         let network = HttpClient()
-        let repository = MarvinBookRepository(networkClient: network, route: route)
+        let repository = MarvinBookRepository(networkClient: network, route: route, delegate: repoDelegate)
         let viewModel = HomeViewModel(delegate: delegate, repository: repository)
         viewController.viewModel = viewModel
         return viewController
     }
     
-    func createDetailViewController(delegate: DetailViewModelDelegate) -> UIViewController {
+    func createDetailViewController(delegate: DetailViewModelDelegate, book: MarvinBook, books: [MarvinBook], repoDelegate: RepositoryDelegate) -> UIViewController {
+        let route = Route()
+        let network = HttpClient()
+        let repository = MarvinBookRepository(networkClient: network, route: route, delegate: repoDelegate)
         let viewController = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-        let viewModel = DetailViewModel(delegate: delegate)
-        viewController.viewModel = viewModel
-        return viewController
-    }
-    
-    func createBookmarkViewController(delegate: BookMarkViewModelDelegate) -> UIViewController {
-        let viewController = storyboard.instantiateViewController(withIdentifier: "BookMarkViewController") as! BookMarkViewController
-        let viewModel = BookMarkViewModel(delegate: delegate)
+        let viewModel = DetailViewModel(delegate: delegate, book: book, books: books, repository: repository)
         viewController.viewModel = viewModel
         return viewController
     }

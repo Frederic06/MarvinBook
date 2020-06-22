@@ -19,5 +19,4 @@ override func draw(_ rect: CGRect) {
 
     self.layer.mask = rectShape
     }
-
 }

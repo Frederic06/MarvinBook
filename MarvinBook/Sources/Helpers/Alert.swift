@@ -9,7 +9,7 @@
 import Foundation
 
 enum AlertType: Equatable {
-    case networkError, noValidEntry
+    case networkError, noValidEntry, saved
 }
 
 struct Alert: Equatable {
@@ -24,6 +24,8 @@ extension Alert {
             self = Alert(message: "A very very bad thing happened.. 🙈")
         case .noValidEntry:
             self = Alert(message: "Renseignez un mail et mot de passe valide svp 😡")
+        case .saved:
+            self = Alert(message: "Livre enregistré dans les favoris 🤘")
         }
     }
 }

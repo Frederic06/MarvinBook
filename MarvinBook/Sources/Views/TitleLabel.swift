@@ -13,7 +13,6 @@ class TitleLabel: UILabel {
         required init(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)!
             self.commonInit()
-
         }
 
         override init(frame: CGRect) {
@@ -21,19 +20,13 @@ class TitleLabel: UILabel {
             self.commonInit()
         }
         func commonInit(){
-            
             let normalText = "Marvin"
-
             let boldText  = "Book"
-
             let attributedString = NSMutableAttributedString(string:normalText)
-
             let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]
             let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
 
             attributedString.append(boldString)
-            
             self.attributedText = attributedText
-            
         }
     }
