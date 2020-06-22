@@ -5,7 +5,7 @@ Voici la justifications des choix techniques pour l'application demo "MARVIN BOO
 
 => Les fonctionnalités demandées comprennent beaucoup de logiques, le MVVM permet une meilleure distinction des responsabilité et les tests sur la logique sont plus simple à réaliser. 
 
-=> L'application a été réalisée en MVVM-C avec le pattern delegate.
+=> L'application a été réalisée avec l'architecture MVVM-C et le delegate pattern.
 
 - L'AppCoordinator est responsable de la transition des vues et des données et est le delegate de chacun des ViewModel.
 - Le ViewController responsable de l'affichage des vues.
